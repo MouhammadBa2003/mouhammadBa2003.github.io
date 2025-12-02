@@ -98,23 +98,26 @@
         .stage-box {
             background: linear-gradient(135deg, #047857, #064e3b);
             color: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 15px;
-            margin-top: 1.5rem;
+            margin-top: 0;
             text-align: center;
             border: 3px solid #10b981;
+            box-shadow: 0 8px 20px rgba(4, 120, 87, 0.3);
         }
 
         .stage-box h3 {
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
             color: white;
+            font-weight: bold;
         }
 
         .stage-box p {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.15rem;
+            color: white;
             margin-bottom: 0;
+            line-height: 1.6;
         }
 
         .btn {
@@ -153,10 +156,27 @@
         }
 
         .about-content {
+            display: block;
+        }
+
+        .about-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .about-intro p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .about-boxes {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
+            gap: 2rem;
+            align-items: start;
         }
 
         .about-text p {
@@ -455,7 +475,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+                    @media (max-width: 768px) {
             nav ul {
                 gap: 1rem;
                 font-size: 0.9rem;
@@ -469,7 +489,7 @@
                 font-size: 1.3rem;
             }
 
-            .about-content {
+            .about-boxes {
                 grid-template-columns: 1fr;
             }
 
@@ -519,29 +539,27 @@
     <section id="apropos">
         <div class="container">
             <h2>À Propos de Moi</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Étudiant passionné en Techniques de l'Informatique au Collège O'Sullivan, je développe constamment mes compétences en programmation, développement web et administration de systèmes.</p>
-                    <p>Mon parcours académique au Sénégal et maintenant au Québec m'a permis de développer une perspective unique et une capacité d'adaptation remarquable dans le domaine des technologies de l'information.</p>
-                    
-                    <div class="stage-box">
-                        <h3>🎯 Recherche de Stage</h3>
-                        <p>Je suis actuellement à la recherche d'un stage pour mettre en pratique mes compétences techniques et contribuer à des projets concrets en entreprise.</p>
-                    </div>
-                    
-                    <div class="highlight-box">
-                        <h3>💡 Compétences clés</h3>
-                        <ul>
-                            <li>Développement d'applications web et mobiles</li>
-                            <li>Gestion de bases de données</li>
-                            <li>Administration de serveurs et réseaux</li>
-                            <li>Soutien technique et résolution de problèmes</li>
-                            <li>Travail d'équipe et communication</li>
-                        </ul>
-                    </div>
+            
+            <div class="about-intro">
+                <p>Étudiant passionné en Techniques de l'Informatique au Collège O'Sullivan, je développe constamment mes compétences en programmation, développement web et administration de systèmes.</p>
+                <p>Mon parcours académique au Sénégal et maintenant au Québec m'a permis de développer une perspective unique et une capacité d'adaptation remarquable dans le domaine des technologies de l'information.</p>
+            </div>
+
+            <div class="about-boxes">
+                <div class="stage-box">
+                    <h3>🎯 Recherche de Stage</h3>
+                    <p>Je suis actuellement à la recherche d'un stage pour mettre en pratique mes compétences techniques et contribuer à des projets concrets en entreprise.</p>
                 </div>
-                <div class="about-image">
-                    💻
+                
+                <div class="highlight-box">
+                    <h3>💡 Compétences clés</h3>
+                    <ul>
+                        <li>Développement d'applications web et mobiles</li>
+                        <li>Gestion de bases de données</li>
+                        <li>Administration de serveurs et réseaux</li>
+                        <li>Soutien technique et résolution de problèmes</li>
+                        <li>Travail d'équipe et communication</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -722,6 +740,11 @@
                         <a href="mailto:mouhammadamin.ba@gmail.com">mouhammadamin.ba@gmail.com</a>
                     </div>
                     <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Téléphone</h3>
+                        <a href="tel:4184562239">(418) 456-2239</a>
+                    </div>
+                    <div class="contact-card">
                         <div class="contact-icon">💼</div>
                         <h3>LinkedIn</h3>
                         <a href="https://www.linkedin.com/in/mouhammad-ba-a1659220b" target="_blank">Mouhammad Ba</a>
@@ -772,4 +795,3 @@
     </script>
 </body>
 </html>
-
